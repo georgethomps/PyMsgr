@@ -52,7 +52,7 @@ class PyMsgr:
         col_headers = ['first', 'last', 'number']
 
         # open CSV file to write
-        with open('template.csv', 'w') as csv_output:
+        with open('bad_output.csv', 'w') as csv_output:
 
             # create CSV writer
             writer = csv.writer(csv_output, delimiter=',')
@@ -104,7 +104,7 @@ class PyMsgr:
         csv_path = input('\nEnter the name of your contacts CSV (with ".csv"):\n')
 
         # import contacts from CSV
-        print('\nImporting contacts...\n')
+        print('\n\nImporting contacts...\n')
         self.import_contacts_csv(csv_path)
         print('Contacts successfully imported!')
 
@@ -278,7 +278,7 @@ class PyMsgr:
             script_file.close()
 
             # send all text messages through iMessage using the applescript and text batch
-            print('\nSending messages...')
+            print('\n\nSending messages...')
             for recipient in self.text_batch:
 
                 # extract number and text message
@@ -322,6 +322,7 @@ if __name__ == '__main__':
         pymsgr.clean_contacts()
 
         # export bad contacts and notify user
+        pymsgr.export_bad_contacts()
         pymsgr.bad_contact_notify()
 
         # ask user for text message to send to contacts
@@ -339,10 +340,10 @@ if __name__ == '__main__':
         pymsgr.delete_text_batch()
 
         # ask if user wants to send more texts
-        print('\nWould you like to send another round of texts?\n')
+        print('\n\nWould you like to send another round of texts?\n')
         user_proceed = input('y/N: ').lower() == 'y'
 
     # terminate program
-    print('\nThanks for using PyMsgr!\n')
+    print('\n\nThanks for using PyMsgr!\n')
     print('Terminating program...\n')
     quit()
