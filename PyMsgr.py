@@ -1,10 +1,3 @@
-# TODO: User's must be signed into iCloud before running!!!
-# TODO: all csv column names must be fixed!!!!!!!!!!!
-# TODO: mention my assumption is that last names will rarely ever be used, first names will always be used!!!!!!!!!!!!!!!!!!!
-# TODO: reduce import statements
-# TODO: create function to set current working directory
-# TODO: SUPER CONFUSED ON WHAT HAPPENS IF SOMEONE IMPORTS THIS MODULE, WILL RELATIVE PATHS BE PRESERVED???????
-
 # import modules
 import re
 import csv
