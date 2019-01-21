@@ -34,7 +34,8 @@ proper documentation to use PyMsgr's methods.
 
 **Running the PyMsgr as a standalone application**
 
-1. Make sure your contacts CSV, PyMsgr.py script, and Scripts folder all placed in the same folder.
+1. Make sure your contacts CSV, PyMsgr.py script, and Scripts folder all placed in the same folder. Make sure your contacts
+   CSV precisely matches the structure on the 'contacts.CSV' in this repository!
 
 2. Open your local terminal and cd into the folder where you placed the files from step 1.
 
